@@ -1,0 +1,11 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  table { border-collapse: collapse; }
+  table tr { background: #f2f2f2; }
+  table tr:nth-child(even) { background: #fff; }
+  td {
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+  }
