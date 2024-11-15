@@ -11,12 +11,12 @@
     require "vendor/autoload.php";
     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
     // $spreadsheet = $reader->load("DummyData.xslx");
-    $spreadsheet = $reader->load("pms.xlsx");
+    $spreadsheet = $reader->load("schedule.xlsx");
 
     $worksheet = $spreadsheet->getActiveSheet();
 
     // (B) LOOP THROUGH ROWS OF CURRENT WORKSHEET
-    foreach ($worksheet->getRowIterator() as $row) {
+    foreach   ($worksheet->getRowIterator() as $row) {
       // (B1) READ CELLS
       $cellIterator = $row->getCellIterator();
       $cellIterator->setIterateOnlyExistingCells(false);
